@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-.header
+header
 {
     display: flex;
     justify-content: space-between;
@@ -18,7 +18,7 @@ ul
     padding: 0;
 }
 
-.logo
+.left
 {
     color: #f9faf8;
     font-size: 24px;
@@ -26,7 +26,7 @@ ul
     align-items: center;
 }
 
-.logo img
+.left img
 {
     width: 50px;
     height: auto;
@@ -40,18 +40,13 @@ a
     color: #f9faf8;
 }
 
-.right-links 
+.right 
 {
     display: flex;
     align-items: center;
 }
 
-.right-links a 
+.right a 
 {
     margin-left: 15px;
-}
-
-.second-container
-{
-    background-color: #1f2937;
 }
