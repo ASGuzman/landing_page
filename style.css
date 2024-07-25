@@ -1,27 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-*
-{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y el borde no afecten el tamaño total del elemento */
 }
 
-.first-container
-{
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #f9faf8;
+    color: #333; 
+}
+
+header {
+    background: #1f2937;
+}
+
+.first-container {
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    background-color: #1f2937;
-    color: white;
-    font-family: Roboto;
-    padding: 30px 90px;
+    color: #E5E7EB;
+    padding: 20px 90px; 
 }
 
 .left {
-    color: #f9faf8;
-    font-size: 24px;
     display: flex;
     align-items: center;
+}
+
+.left p {
+    font-size: 24px;
+    color: #E5E7EB;
 }
 
 .left img {
@@ -34,14 +44,73 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; 
+    display: flex;
 }
 
 .right li {
-    margin-left: 15px; 
+    margin-left: 15px;
 }
 
 a {
     text-decoration: none;
+    color: #E5E7EB;
+}
+
+.second-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 90px;
+    gap: 20px; 
+}    
+
+.second-container .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.second-container .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
     color: #f9faf8;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.intro p
+{
+    font-size: 10px;
+}
+
+button.intro {
+    font-size: 16px;
+}
+
+.second-container img {
+    width: 100%; 
+    max-width: 400px; 
+    height: auto;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 20px; 
+    background-color: #3882f6;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2a65d3; 
 }
